@@ -1,10 +1,10 @@
 # ---- We'll define a build arg pointing to the official or community base image
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:18.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # ---- Define build-time args (defaults can be overridden) ----
-ARG CF_VERSION=2025.1.0
+ARG CF_VERSION=2025.7.0
 ARG CF_ARCH
 ARG CF_URL=https://github.com/cloudflare/cloudflared/releases/download
 
